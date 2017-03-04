@@ -1,0 +1,99 @@
+<html>
+  <link href="style.css" type="text/css" rel="stylesheet"/>
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+  <body>
+    <div class="tdl-holder">
+      <h2 class="text-center">TO DO LIST</h2>
+      <div class="tdl-content">
+        <ul class="pr">
+          <li class="hp">
+                 <label class ="data-editable">
+                 <input type="checkbox">
+                 <i></i>
+                 <span class="header">Bangun Pagi</span><br>
+                 <span class="description">Bangun Pagi lalu ...</span><br>
+                 <span class="sdate">Start: </span> 2017-03-05 <br>
+                 <span class="edate">End: </span> 2017-03-05 <br>
+                 <span class="prior">HIGH</span>
+                
+                 <a href='#'>–</a>
+                 </label>
+
+          </li>
+          <li class="mp">
+                 <label>
+                 <input type="checkbox">
+                 <i></i>
+                 <span class="header">Bangun Pagi</span><br>
+                 <span class="description">Bangun Pagi lalu ...</span><br>
+                 <span class="sdate">Start: </span> 2017-03-05  <br>
+                 <span class="edate">End: </span> 2017-03-05 <br>
+                 <span class="prior">HIGH</span>
+               
+                 <a href='#'>–</a>
+                 </label>
+
+          </li>
+          <li class="lp">
+                 <label>
+                 <input type="checkbox">
+                 <i></i>
+                 <span class="header">Bangun Pagi</span><br>
+                 <span class="description">Bangun Pagi lalu ...</span><br>
+                 <span class="sdate">Start: </span> 2017-03-05  <br>
+                 <span class="edate">End: </span> 2017-03-05 <br>
+                 <span class="prior">HIGH</span>
+                 
+                 <a href='#'>–</a>
+                 </label>
+
+          </li>
+        </ul>
+      </div>
+
+
+        <h2 class="text-center"> Insert New Task </h5>
+        <input type="text" class="tdl-new" placeholder="Write new item" required>
+        <textarea class="desc" placeholder="description" required></textarea> <br>
+         Start Date : <input type="date" id="sdpick" class="datepicker"> <br>
+         End Date : <input type="date" id="edpick" class="datepicker"> <br>
+
+
+      <div class="row">
+        <div class="col-md-4">
+         <input type="radio" value="HIGH" name="priority" id="high" required/>
+         High
+        </div>
+        <div class="col-md-4">
+         <input type="radio" value="MEDIUM" name="priority" id="medium"/>
+         Medium
+        </div>
+        <div class="col-md-4">
+         <input type="radio" value="LOW" name="priority" id="low">
+         Low
+        </div>
+        
+      </div>
+        
+      <div class="row"> 
+        <div class="col-md-4 col-md-offset-4">
+            <button class="btn btn-primary">Add</button> 
+        </div>
+      </div>  
+        
+      </div>
+   
+   
+  
+  </body>
+
+</html>
