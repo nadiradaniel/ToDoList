@@ -1,7 +1,6 @@
 (function($){
   $(function(){
     var ul = $('.pr');
-localStorage.clear();
   if(localStorage.getItem('todo')){
           ul.html(localStorage.getItem('todo'));
     }
@@ -15,21 +14,22 @@ localStorage.clear();
       
 
       if (p == "HIGH"){
-       var r = $("<li><label><input type='checkbox'><i></i><span class='header'>"+ v +"</span> <br> <span class='description'>"
+       var r = $("<li><label><input type='checkbox'><span class='header'>"+ v +"</span> <br> <span class='description'>"
         + d + "</span> <br> <span> Start : " + spick  + "</span> <br> <span> End : " 
         + epick + "</span> <br> <span>"+p+" </span> <a href='#'>–</a></label></li>");
        $(r).insertAfter(".hp");
        localStorage.setItem('todo', ul.html());
+
     }
       else if (p == "MEDIUM"){
-       var r = $("<li><label><input type='checkbox'><i></i><span class='header'>"+ v +"</span> <br> <span class='description'>"
+       var r = $("<li><label><input type='checkbox'><span class='header'>"+ v +"</span> <br> <span class='description'>"
         + d + "</span> <br> <span> Start : " + spick  + "</span> <br> <span> End : " 
         + epick +"</span> <br> <span>"+p+" </span> <a href='#'>–</a></label></li>");
        $(r).insertAfter(".mp");
        localStorage.setItem('todo', ul.html());
     }
      else{
-       var r = $("<li><label><input type='checkbox'><i></i><span class='header'>"+ v +"</span> <br> <span class='description'>"
+       var r = $("<li><label><input type='checkbox'><span class='header'>"+ v +"</span> <br> <span class='description'>"
         + d + "</span> <br> <span> Start : " + spick  + "</span> <br> <span> End : " 
         + epick +"</span> <br> <span>"+p+" </span> <a href='#'>–</a></label></li>");
        $(r).insertAfter(".lp");
